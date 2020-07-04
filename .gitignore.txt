@@ -652,3 +652,6 @@ MigrationBackup/
 .ionide/
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio,angular,aspnetcore,dotnetcore,windows,node
+
+#astah
+*.asta.bak
