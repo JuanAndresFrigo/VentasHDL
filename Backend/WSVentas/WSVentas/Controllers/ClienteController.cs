@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WSVentas.Models;
 using WSVentas.Models.Response;
+using WSVentas.Models.Request;
 
 namespace WSVentas.Controllers
 {
@@ -17,7 +18,6 @@ namespace WSVentas.Controllers
         public IActionResult Get()
         {
             Respuesta oRespuesta = new Respuesta();
-            oRespuesta.Exito = 0;
             try
             {
 
@@ -36,13 +36,77 @@ namespace WSVentas.Controllers
             catch (Exception ex)
             {
                 oRespuesta.Mensaje = ex.Message;
-
             }
             return Ok(oRespuesta);
+        }
 
+        [HttpPost]
+        public IActionResult Add(ClienteRequest oModel)
+        {
+            Respuesta oRespuesta = new Respuesta();
+            try
+            {
+                using (VentaHDLContext db = new VentaHDLContext())
+                {
+                    Cliente oCliente = new Cliente();
+                    oCliente.Nombre = oModel.Nombre;
+
+                    db.Cliente.Add(oCliente);
+                    db.SaveChanges();
+                    oRespuesta.Exito = 1;
+                }
+            }
+            catch (Exception ex)
+            {
+                oRespuesta.Mensaje = ex.Message;
+            }
+            return Ok(oRespuesta);
+        }
+
+        [HttpPut]
+        public IActionResult Edit(ClienteRequest oModel)
+        {
+            Respuesta oRespuesta = new Respuesta();
+            try
+            {
+                using (VentaHDLContext db = new VentaHDLContext())
+                {
+                    Cliente oCliente = db.Cliente.Find(oModel.Id);
+                    oCliente.Nombre = oModel.Nombre;
+
+                    db.Entry(oCliente).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                    db.SaveChanges();
+                    oRespuesta.Exito = 1;
+                }
+            }
+            catch (Exception ex)
+            {
+                oRespuesta.Mensaje = ex.Message;
+            }
+            return Ok(oRespuesta);
         }
 
 
+        [HttpDelete("{Id}")]
+        public IActionResult Delete(int Id)
+        {
+            Respuesta oRespuesta = new Respuesta();
+            try
+            {
+                using (VentaHDLContext db = new VentaHDLContext())
+                {
+                    Cliente oCliente = db.Cliente.Find(Id);
+                    db.Remove(oCliente);
+                    db.SaveChanges();
+                    oRespuesta.Exito = 1;
+                }
+            }
+            catch (Exception ex)
+            {
+                oRespuesta.Mensaje = ex.Message;
+            }
+            return Ok(oRespuesta);
+        }
     }
 
 
