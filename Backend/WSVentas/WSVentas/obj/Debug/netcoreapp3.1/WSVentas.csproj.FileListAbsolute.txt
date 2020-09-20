@@ -106,3 +106,10 @@ C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\obj\Debug\netcoreapp3.1\staticwe
 C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\obj\Debug\netcoreapp3.1\WSVentas.dll
 C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\obj\Debug\netcoreapp3.1\WSVentas.pdb
 C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\obj\Debug\netcoreapp3.1\WSVentas.genruntimeconfig.cache
+C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
