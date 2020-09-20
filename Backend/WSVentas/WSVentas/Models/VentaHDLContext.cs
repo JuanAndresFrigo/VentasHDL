@@ -18,6 +18,7 @@ namespace WSVentas.Models
         public virtual DbSet<Cliente> Cliente { get; set; }
         public virtual DbSet<Concepto> Concepto { get; set; }
         public virtual DbSet<Producto> Producto { get; set; }
+        public virtual DbSet<Usuario> Usuario { get; set; }
         public virtual DbSet<Venta> Venta { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -25,7 +26,7 @@ namespace WSVentas.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server= LAPTOP-8KHQ0UD2;Database=VentaHDL;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=VentaHDL;Integrated Security=True");
             }
         }
 
@@ -94,6 +95,35 @@ namespace WSVentas.Models
                 entity.Property(e => e.PrecioUnitario)
                     .HasColumnName("precioUnitario")
                     .HasColumnType("decimal(16, 2)");
+            });
+
+            modelBuilder.Entity<Usuario>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToTable("usuario");
+
+                entity.Property(e => e.Email)
+                    .IsRequired()
+                    .HasColumnName("email")
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("id")
+                    .ValueGeneratedOnAdd();
+
+                entity.Property(e => e.Nombre)
+                    .IsRequired()
+                    .HasColumnName("nombre")
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Password)
+                    .IsRequired()
+                    .HasColumnName("password")
+                    .HasMaxLength(256)
+                    .IsUnicode(false);
             });
 
             modelBuilder.Entity<Venta>(entity =>

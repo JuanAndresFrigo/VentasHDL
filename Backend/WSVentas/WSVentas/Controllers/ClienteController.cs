@@ -7,11 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 using WSVentas.Models;
 using WSVentas.Models.Response;
 using WSVentas.Models.Request;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WSVentas.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ClienteController : ControllerBase
     {
         [HttpGet]

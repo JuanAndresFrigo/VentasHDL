@@ -94,11 +94,8 @@ C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\bin\Debug\netcoreapp3.1\runtimes
 C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\obj\Debug\netcoreapp3.1\WSVentas.csprojAssemblyReference.cache
 C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\obj\Debug\netcoreapp3.1\WSVentas.AssemblyInfoInputs.cache
 C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\obj\Debug\netcoreapp3.1\WSVentas.AssemblyInfo.cs
-C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\obj\Debug\netcoreapp3.1\WSVentas.csproj.CoreCompileInputs.cache
-C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\obj\Debug\netcoreapp3.1\WSVentas.MvcApplicationPartsAssemblyInfo.cache
 C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\obj\Debug\netcoreapp3.1\WSVentas.RazorTargetAssemblyInfo.cache
 C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\obj\Debug\netcoreapp3.1\WSVentas.csproj.CopyComplete
 C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\obj\Debug\netcoreapp3.1\staticwebassets\WSVentas.StaticWebAssets.Manifest.cache
@@ -113,3 +110,7 @@ C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\bin\Debug\netcoreapp3.1\Microsof
 C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\obj\Debug\netcoreapp3.1\WSVentas.csprojAssemblyReference.cache
+C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\obj\Debug\netcoreapp3.1\WSVentas.csproj.CoreCompileInputs.cache
+C:\Proyects\VentasHDL\Backend\WSVentas\WSVentas\obj\Debug\netcoreapp3.1\WSVentas.MvcApplicationPartsAssemblyInfo.cache
