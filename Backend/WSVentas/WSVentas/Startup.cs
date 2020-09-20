@@ -30,7 +30,9 @@ namespace WSVentas
             {
                 options.AddPolicy(name: MiCores, builder =>
                 {
+                    builder.WithHeaders("*");
                     builder.WithOrigins("*");
+                    builder.WithMethods("*");
                 });
             });
 

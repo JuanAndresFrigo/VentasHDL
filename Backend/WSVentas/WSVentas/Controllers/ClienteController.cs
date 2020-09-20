@@ -25,7 +25,7 @@ namespace WSVentas.Controllers
                 using (VentaHDLContext db = new VentaHDLContext())
                 {
                     // Dentro del using se hacen las consultas, en este caso con Entity Framework
-                    var lst = db.Cliente.ToList();
+                    var lst = db.Cliente.OrderByDescending(d=>d.Id).ToList();
 
                     oRespuesta.Exito = 1;
 
